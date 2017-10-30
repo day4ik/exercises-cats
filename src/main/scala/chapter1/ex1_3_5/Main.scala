@@ -1,4 +1,4 @@
-package ex1_3_5
+package chapter1.ex1_3_5
 
 import cats.Eq
 import cats.instances.int._

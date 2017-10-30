@@ -1,4 +1,4 @@
-package ex1_2
+package chapter1.ex1_2
 
 import scala.io.StdIn
 

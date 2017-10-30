@@ -1,4 +1,4 @@
-package ex1_2
+package chapter1.ex1
 
 final case class Cat(
   name: String,
