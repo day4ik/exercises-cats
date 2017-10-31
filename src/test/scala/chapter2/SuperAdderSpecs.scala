@@ -18,8 +18,8 @@ class SuperAdderSpecs extends FlatSpec with MustMatchers {
     val list = List.fill(100)(Random.nextInt(10)).map(Option(_)).map(_.filter( _ < 4 ))
     list.flatten.sum mustBe SuperAdder.add(list).get
   }
-  it should "summurize order models correctly" in {
-    val list = List(Order(1,2), Order(4,3))
+  it should "summurize Order models correctly" in {
+    val list = List(Order(1,2), Order(4,3), Order(4,9))
     list.reduce((f,s) => Order(f.totalCost+s.totalCost, f.quantity+s.quantity)) mustBe SuperAdder.add(list)
   }
 }
